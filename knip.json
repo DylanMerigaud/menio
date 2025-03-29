@@ -1,0 +1,11 @@
+{
+  "$schema": "https://unpkg.com/knip@latest/schema.json",
+  "ignoreDependencies": ["next-ssr-plugin", "eslint-config-next"],
+  "ignore": ["**/*.d.ts"],
+  "ignoreExportsUsedInFile": {
+    "interface": true,
+    "type": true
+  },
+  "entry": ["src/**/*.{ts,tsx}", "scripts/**/*.{ts,tsx}", "next.config.ts"],
+  "project": ["src/**/*.{ts,tsx}"]
+}

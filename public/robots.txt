@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# Disallow specific private paths
+Disallow: /dashboard/
+Disallow: /sign-in/
+Disallow: /sign-up/
+Disallow: /onboarding/
+Disallow: /api/
+Disallow: /trpc/
+Disallow: /_next/
+Disallow: /_vercel/
+
+# Allow crawling of restaurant pages
+Allow: /restaurant/
+
+# Special rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /dashboard/
+Disallow: /sign-in/
+Disallow: /sign-up/
+Disallow: /onboarding/
+Disallow: /api/
+Disallow: /trpc/
+Disallow: /_next/
+Disallow: /_vercel/
+
+# Rules for Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /
+
+# Sitemap and host configuration
+Sitemap: https://menio.app/sitemap.xml
+Host: menio.app

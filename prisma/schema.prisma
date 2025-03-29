@@ -1,0 +1,195 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Define enum for social network type (previously social_network_type)
+enum SocialNetworkType {
+  FACEBOOK
+  INSTAGRAM
+  TIKTOK
+  YOUTUBE
+  X
+}
+
+// Define enum for subscription status
+enum SubscriptionStatus {
+  ACTIVE
+  TRIALING
+  PAST_DUE
+  CANCELED
+  UNPAID
+  INCOMPLETE
+  INCOMPLETE_EXPIRED
+  PAUSED
+}
+
+// Owner of a restaurant (previously owners table)
+model Owner {
+  id          String       @id @default(uuid())
+  firstName   String
+  lastName    String
+  companyName String?
+  email       String?
+  userId      String       // User ID from Clerk
+  isAdmin     Boolean      @default(false)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  restaurants Restaurant[]
+
+  @@index([userId])
+  @@map("owners")
+}
+
+// Restaurant information (previously restaurants table)
+model Restaurant {
+  id                    String             @id @default(uuid())
+  name                  String
+  description           String?
+  address               String             // Basic address line (for backward compatibility)
+  slug                  String             @unique
+  ownerId               String
+  published             Boolean            @default(false)
+  logoUrl               String?
+  coverUrl              String?
+  phone                 String?            // Moved from ContactInfo
+  email                 String?            // Moved from ContactInfo
+  reservationUrl        String?            // Reservation platform URL
+  stripeCustomerId      String?            // Customer ID for Stripe integration
+  stripeSubscriptionId  String?            // Subscription ID for Stripe integration
+  subscriptionStatus    SubscriptionStatus? // Current status of the subscription
+  trialEnd              DateTime?          // When the trial ends
+  lastPaymentStatus     String?            // Status of the last payment
+  lastPaymentDate       DateTime?          // Date of the last payment
+  createdAt             DateTime           @default(now())
+  updatedAt             DateTime           @updatedAt
+// pictures 
+
+
+  // Relations
+  owner         Owner                  @relation(fields: [ownerId], references: [id])
+  openingHours  OpeningHours[]
+  addressInfo   Address?               // Renamed from contactInfo
+  images        RestaurantImage[]          
+  menu          RestaurantMenu?          
+  socialLinks   RestaurantSocialLink[]
+
+  @@index([ownerId])
+  @@index([slug])
+  @@index([stripeSubscriptionId])
+  @@map("restaurants")
+}
+
+// Opening hours (previously opening_hours table)
+model OpeningHours {
+  id           String     @id @default(uuid())
+  restaurantId String
+  dayOfWeek    Int
+  openTime     DateTime
+  closeTime    DateTime
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  
+  // Relation
+  restaurant   Restaurant @relation(fields: [restaurantId], references: [id])
+
+  @@index([restaurantId])
+  @@map("opening_hours")
+}
+
+// Address information (renamed from contact_info)
+model Address {
+  id               String     @id @default(uuid())
+  restaurantId     String     @unique
+  addressFormatted String?
+  street           String?
+  city             String?
+  state            String?
+  zip              String?
+  country          String?
+  latitude         Float?     // Latitude coordinate from Google Maps
+  longitude        Float?     // Longitude coordinate from Google Maps
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+  
+  // Relation
+  restaurant       Restaurant @relation(fields: [restaurantId], references: [id])
+
+  @@index([restaurantId])
+  @@map("addresses")
+}
+
+
+model Upload {
+  id        String   @id @default(cuid())
+  url       String   @unique // The public URL to access the file
+  key       String   @unique // The upload file key for operations like deletion
+  name      String   // Original filename
+  size      Int      // File size in bytes
+  type      String   // MIME type (e.g., "image/jpeg", "application/pdf")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  // Relations
+  userId    String // User ID from Clerk
+  restaurantImage RestaurantImage?
+  restaurantMenu RestaurantMenu?
+
+  @@index([userId])
+  @@map("uploads")
+}
+// create RestaurantImage extends Upload
+model RestaurantImage {
+  id              String      @id @default(cuid())
+  alt             String?     // Alternative text for accessibility
+  displayOrder    Int         @default(0)
+  
+  // Relations
+  uploadId        String      @unique  // One-to-one with Upload
+  upload          Upload      @relation(fields: [uploadId], references: [id], onDelete: Cascade)
+  
+  restaurantId    String
+  restaurant      Restaurant  @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+
+  @@index([restaurantId])
+  @@map("restaurant_images")
+}
+
+model RestaurantMenu {
+  id              String      @id @default(cuid())
+  title           String
+  isActive        Boolean     @default(true)
+  effectiveDate   DateTime?
+  
+  // Relations
+  uploadId        String      @unique  // One-to-one with Upload
+  upload          Upload      @relation(fields: [uploadId], references: [id], onDelete: Cascade)
+  
+  restaurantId    String      @unique
+  restaurant      Restaurant  @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+
+  @@index([restaurantId])
+  @@map("restaurant_menus")
+}
+// Restaurant social links (previously restaurant_social_links table)
+model RestaurantSocialLink {
+  id              String           @id @default(uuid())
+  restaurantId    String
+  networkType     SocialNetworkType
+  username        String           // Store only the username, URL is generated at runtime
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  
+  // Relation
+  restaurant      Restaurant       @relation(fields: [restaurantId], references: [id])
+
+  @@index([restaurantId])
+  @@map("restaurant_social_links")
+}

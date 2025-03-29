@@ -1,0 +1,9 @@
+onlyBuiltDependencies:
+  - '@clerk/shared'
+  - '@prisma/client'
+  - '@prisma/engines'
+  - '@swc/core'
+  - core-js
+  - esbuild
+  - prisma
+  - sharp

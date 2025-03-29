@@ -1,0 +1,426 @@
+{
+  "components": {
+    "phoneInput": {
+      "searchCountry": "Rechercher un pays...",
+      "noCountryFound": "Aucun pays trouvé.",
+      "countryCode": "{code}"
+    },
+    "uploadDropzone": {
+      "dragAndDrop": "Glissez et déposez des fichiers ici ou cliquez pour parcourir",
+      "allowedTypes": "Types de fichiers autorisés: {allowed}",
+      "uploading": "Téléchargement de {fileName}...",
+      "selectFiles": "Sélectionner des fichiers"
+    },
+    "carousel": {
+      "previousSlide": "Diapositive précédente",
+      "nextSlide": "Diapositive suivante",
+      "goToSlide": "Aller à la diapositive {number}",
+      "goToImage": "Aller à l'image {number}",
+      "closeFullscreen": "Fermer le plein écran",
+      "previousImage": "Image précédente",
+      "nextImage": "Image suivante"
+    }
+  },
+  "common": {
+    "settings": "Paramètres",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Soumettre",
+    "required": "Obligatoire",
+    "optional": "Optionnel",
+    "yes": "Oui",
+    "no": "Non",
+    "success": "Succès",
+    "error": "Erreur",
+    "saved": "Vos informations ont été enregistrées",
+    "errorMessage": "Une erreur est survenue. Veuillez réessayer.",
+    "saving": "Enregistrement...",
+    "close": "Fermer",
+    "toggleMenu": "Afficher le menu",
+    "toggleTheme": "Changer le thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "menio": "Menio",
+    "menu": "Menu",
+    "zero": "0",
+    "dash": "-",
+    "copyright": "©",
+    "createdWithMenio": "| Créé avec Menio",
+    "getRestaurantWebsite": "Obtenez votre site web de restaurant avec Menio",
+    "supportEmail": "thomas@menio.app",
+    "supportText": "Vous n'avez pas trouvé ce que vous cherchiez ? Contactez notre équipe d'assistance directement et nous vous répondrons dès que possible.",
+    "domainSuffix": ".menio.app",
+    "required_asterisk": "*",
+    "left_parenthesis": "(",
+    "right_parenthesis": ")",
+    "notFoundCode": "404",
+    "megabyte": "Mo",
+    "call": "Appeler",
+    "bookTable": "Réserver une table",
+    "getDirections": "Itinéraire pour m'y rendre",
+    "viewMenuPdf": "Voir le menu",
+    "reserve": "Réserver",
+    "menu": "Menu",
+    "address": "Adresse",
+    "gallery": "Galerie",
+    "bookOnline": "Réserver en ligne",
+    "errorLoading": "Erreur de chargement Google Maps:",
+    "loadingPdf": "Chargement du PDF...",
+    "poweredBy": "Propulsé par",
+    "getStartedToday": "Commencez dès aujourd'hui",
+    "createRestaurantWebsite": "Créez un site web magnifique pour votre restaurant en un instant",
+    "ownerPreviewMode": "Mode aperçu propriétaire - Voici comment votre site apparaîtra aux visiteurs",
+    "published": "Publié",
+    "unpublished": "Non publié",
+    "dashboard": "Tableau de bord",
+    "edit": "Modifier",
+    "open": "Ouvrir",
+    "delete": "Supprimer",
+    "deleting": "Suppression...",
+    "nextStep": "Étape suivante",
+    "uploadRestaurantMenu": "Téléchargez le menu de votre restaurant",
+    "uploadRestaurantPhotos": "Téléchargez des photos de votre restaurant, de vos plats...",
+    "checking": "Vérification de la disponibilité...",
+    "slugTaken": "Ce nom de restaurant est déjà pris",
+    "slugAvailable": "Disponible !"
+  },
+  "notFound": {
+    "title": "Page Non Trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "goHome": "Retour à l'accueil"
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Créateur de Site pour Restaurant",
+    "title": "Créez un site pour votre restaurant en quelques minutes",
+    "description": "Obtenez la visibilité en ligne que votre restaurant mérite en quelques étapes pour gagner de nouveaux clients et améliorer votre image de marque.",
+    "learnMore": "En savoir plus"
+  },
+  "features": {
+    "badge": "Fonctionnalités",
+    "title": "Tout ce dont vous avez besoin",
+    "description": "Notre plateforme fournit tous les outils essentiels pour créer une présence en ligne professionnelle pour votre restaurant.",
+    "design": {
+      "title": "Design élégant",
+      "description": "Design professionnel et moderne qui met en valeur les meilleurs aspects de votre restaurant."
+    },
+    "update": {
+      "title": "Facile à mettre à jour",
+      "description": "Mettez à jour votre menu, vos photos et vos informations en quelques clics."
+    },
+    "mobile": {
+      "title": "Optimisé pour mobile",
+      "description": "Votre site web s'affichera parfaitement sur tous les appareils, des ordinateurs aux smartphones."
+    }
+  },
+  "pricing": {
+    "badge": "Tarifs",
+    "title": "Tarification simple",
+    "description": "Pas de frais cachés, pas de plans compliqués. Juste un abonnement simple.",
+    "premium": "Plan Premium",
+    "popular": "Populaire",
+    "premiumDescription": "Tout ce dont vous avez besoin pour créer un site web professionnel",
+    "firstMonthFree": "Premier mois gratuit",
+    "features": {
+      "customDomain": "Domaine personnalisé",
+      "onlineMenu": "Menu en ligne",
+      "photoGallery": "Galerie de photos",
+      "socialMediaIntegration": "Intégration des réseaux sociaux",
+      "customerSupport": "Support client"
+    }
+  },
+  "footer": {
+    "description": "Créez un site web élégant pour votre restaurant.",
+    "product": "Produit",
+    "company": "Entreprise",
+    "legal": "Légal",
+    "about": "À propos",
+    "contact": "Contact",
+    "terms": "Conditions",
+    "privacy": "Confidentialité",
+    "allRightsReserved": "Tous droits réservés."
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "Inscription",
+    "phoneNumber": "Numéro de téléphone",
+    "continue": "Continuer",
+    "logout": "Déconnexion",
+    "myAccount": "Mon Compte",
+    "dashboard": "Tableau de bord",
+    "settings": "Paramètres"
+  },
+  "onboarding": {
+    "title": "Bienvenue sur Menio",
+    "personalInfo": {
+      "title": "Informations personnelles",
+      "description": "Parlez-nous de vous. Ces informations ne seront pas visibles par les clients.",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "companyName": "Nom de la société",
+      "email": "Email"
+    },
+    "restaurantInfo": {
+      "title": "Informations du restaurant",
+      "name": "Nom du restaurant",
+      "description": "Description du restaurant",
+      "address": "Adresse",
+      "addressSearchDescription": "Recherchez l'adresse de votre restaurant",
+      "searchByAddress": "Recherche par adresse",
+      "searchByAddressDescription": "Utilisez cette option si vous connaissez l'adresse exacte",
+      "searchByEstablishment": "Recherche par nom de restaurant",
+      "searchByEstablishmentDescription": "Utilisez cette option si votre restaurant est déjà sur Google Maps",
+      "searchOptions": "Options de recherche"
+    },
+    "menuAndPictures": {
+      "title": "Menu et Photos",
+      "description": "Téléchargez le menu de votre restaurant et mettez-le en valeur avec de belles photos.",
+      "menuUpload": "Télécharger le menu (PDF)",
+      "picturesUpload": "Télécharger des photos",
+      "menuDescription": "Téléchargez le menu de votre restaurant (format PDF préféré)",
+      "picturesDescription": "Téléchargez des photos de votre restaurant, de vos plats...",
+      "menuUploadSuccess": "Le menu a été téléchargé avec succès",
+      "imagesUploadSuccess": "{count} images ont été téléchargées avec succès",
+      "confirmDeleteMenu": "Êtes-vous sûr de vouloir supprimer ce menu ?",
+      "confirmDeleteImage": "Êtes-vous sûr de vouloir supprimer cette image ?",
+      "currentMenu": "Menu actuel: {name}",
+      "currentPictures": "Photos actuelles:",
+      "imagesUploaded": "{count} images téléchargées",
+      "primary": "Principale"
+    },
+    "openingTimes": {
+      "title": "Horaires d'ouverture",
+      "description": "Définissez les horaires d'ouverture de votre restaurant pour chaque jour de la semaine.",
+      "monday": "Lundi",
+      "tuesday": "Mardi",
+      "wednesday": "Mercredi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche",
+      "closed": "Fermé",
+      "open": "Ouvert",
+      "addTimeSlot": "Ajouter un créneau horaire",
+      "openSlot": "Ouverture {number}",
+      "closeSlot": "Fermeture {number}",
+      "errors": {
+        "overlappingTimeSlots": "Les créneaux horaires ne peuvent pas se chevaucher. Veuillez ajuster les horaires."
+      }
+    },
+    "contactInfo": {
+      "title": "Réservations & Réseaux sociaux",
+      "description": "Définissez les options de réservation et les liens vers les réseaux sociaux de votre restaurant.",
+      "phone": "Numéro de téléphone",
+      "phoneDescription": "Ce numéro sera affiché sur le site web de votre restaurant.",
+      "phonePlaceholder": "Entrez le numéro de téléphone",
+      "reservationUrl": "Lien de réservation",
+      "reservationUrlDescription": "Ajoutez un lien vers votre plateforme de réservation (TheFork, OpenTable, etc.)",
+      "noReservations": "Pas de réservations",
+      "socialMedia": "Réseaux sociaux",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "x": "X (Twitter)",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "email": "Email du restaurant",
+      "emailDescription": "Cet email sera affiché sur le site web de votre restaurant.",
+      "contact": "Informations de contact",
+      "reservations": "Réservations",
+      "invalidEmail": "Veuillez saisir une adresse email valide",
+      "invalidUrl": "Veuillez saisir une URL valide",
+      "invalidUsername": "Veuillez saisir un nom d'utilisateur valide",
+      "facebook": {
+        "title": "Facebook",
+        "placeholder": "utilisateur",
+        "description": "Nom d'utilisateur"
+      },
+      "instagram": {
+        "title": "Instagram",
+        "placeholder": "utilisateur",
+        "description": "Nom d'utilisateur"
+      },
+      "tiktok": {
+        "title": "TikTok",
+        "placeholder": "utilisateur",
+        "description": "Nom d'utilisateur"
+      },
+      "youtube": {
+        "title": "YouTube",
+        "placeholder": "utilisateur",
+        "description": "Nom d'utilisateur"
+      },
+      "x": {
+        "title": "X (Twitter)",
+        "placeholder": "utilisateur",
+        "description": "Nom d'utilisateur"
+      }
+    }
+  },
+  "dashboard": {
+    "welcome": "Bienvenue, {name} 👋",
+    "welcomeSubtitle": "Gérez votre site web de restaurant et votre abonnement",
+    "overview": "Vue d'ensemble",
+    "editSite": "Modifier le site",
+    "assistance": "Assistance",
+    "assistanceSubtitle": "Besoin d'aide avec votre site web ?",
+    "performance": "Performance",
+    "performanceSubtitle": "Suivez les performances de votre site web",
+    "visitors": "Visiteurs",
+    "clicks": "Clics",
+    "viewAnalytics": "Voir les analyses",
+    "termsAndConditions": "Conditions générales",
+    "settings": "Paramètres",
+    "seeWebsite": "Voir le site",
+    "status": {
+      "published": "Publié",
+      "notPublished": "Non publié",
+      "readyToPublish": "Votre site est prêt. Abonnez-vous pour le publier.",
+      "readyToActivate": "Votre site est prêt. Activez-le en basculant la visibilité.",
+      "siteActive": "Votre site est en ligne et visible par tous"
+    },
+    "subscription": {
+      "title": "Statut de l'abonnement",
+      "subscribe": "S'abonner pour publier",
+      "subscribeAndPublish": "M'abonner et publier mon site",
+      "manage": "Gérer l'abonnement",
+      "celebrationEmoji": "🎉",
+      "freeTrialActive": "Vous êtes actuellement en période d'essai gratuit ! 🎁",
+      "freeTrialMessage": "Profitez d'un accès complet à toutes les fonctionnalités jusqu'au {date}.",
+      "required": "Abonnement requis",
+      "requireDescription": "Vous avez besoin d'un abonnement actif pour publier votre site de restaurant.",
+      "includes": "Votre abonnement comprend :",
+      "inactive": "Abonnement inactif",
+      "continueFeatures": "Abonnez-vous pour continuer à utiliser toutes les fonctionnalités",
+      "expired": "Abonnement expiré",
+      "expiredDetails": "Votre abonnement a expiré. Abonnez-vous à nouveau pour publier votre site de restaurant.",
+      "expiredPrice": "29,99€ / mois seulement",
+      "activeDetails": "Votre abonnement est actif jusqu'au {date}.",
+      "activeDetailsNoDate": "Votre abonnement est actif.",
+      "infoEmoji": "ℹ️",
+      "warningEmoji": "⚠️",
+      "active": "Abonnement actif",
+      "feature": {
+        "website": "Site web de restaurant public",
+        "support": "Support client",
+        "updates": "Mises à jour régulières"
+      },
+      "freeTrial": {
+        "title": "Essayez gratuitement",
+        "description": "1 mois offert pour tester la solution.",
+        "noCommitment": "Sans engagement, annulable à tout moment.",
+        "pricingInfo": "1 mois gratuit, puis 29,99€ / mois seulement"
+      }
+    },
+    "actions": {
+      "viewSite": "Voir mon site",
+      "faq": "FAQ",
+      "contactUs": "Nous écrire",
+      "settings": "Paramètres",
+      "editSite": "Modifier mon site",
+      "toggleVisibility": "Visibilité du site"
+    }
+  },
+  "generatedSite": {
+    "direction": "Itinéraire",
+    "directionTitle": "Nous trouver",
+    "openingTimes": "Horaires d'ouverture",
+    "menu": "Menu",
+    "contact": "Contact",
+    "contactAndSocial": "Contact et réseaux sociaux",
+    "openUntil": "Ouvert aujourd'hui jusqu'à {time}",
+    "openAt": "Ouvre à {time}",
+    "closingSoon": "Fermeture imminente ({time})",
+    "closed": "Fermé",
+    "restaurantIn": "Restaurant à",
+    "openToday": "Ouvert aujourd'hui",
+    "descriptionPlaceholder": "Aucune description disponible",
+    "openAtWithDay": "Ouvre {day} à {time}",
+    "callUs": "Nous appeler",
+    "emailUs": "Nous écrire",
+    "websiteCreatedWith": "Site de restaurant créé facilement avec"
+  },
+  "preview": {
+    "banner": "Mode aperçu",
+    "published": "Publié",
+    "notPublished": "Non publié",
+    "backToEditor": "Retour à l'éditeur"
+  },
+  "assistance": {
+    "faq": "Questions fréquemment posées",
+    "contactUs": "Nous contacter"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "subtitle": "Gérez les paramètres et préférences de votre compte",
+    "personalInformation": "Informations personnelles",
+    "personalInformationSubtitle": "Mettez à jour vos détails de profil",
+    "profileInfo": "Informations de profil",
+    "profileInfoDescription": "Mettez à jour vos informations personnelles et d'entreprise",
+    "modifyInfo": "Modifier les informations de profil",
+    "subscription": "Abonnement",
+    "subscriptionSubtitle": "Gérez vos détails de paiement",
+    "billingInfo": "Informations de facturation",
+    "billingInfoDescription": "Mettez à jour votre mode de paiement et vos détails de facturation",
+    "manageSubscription": "Gérer l'abonnement",
+    "accountSettings": "Paramètres du compte",
+    "accountSettingsSubtitle": "Gérez votre compte",
+    "dangerZone": "Zone dangereuse",
+    "dangerZoneDescription": "Supprimez définitivement votre compte et toutes les données",
+    "deleteAccount": "Supprimer le compte"
+  },
+  "error": {
+    "title": "Une erreur est survenue",
+    "description": "Nous nous excusons pour le désagrément. Une erreur inattendue s'est produite.",
+    "tryAgain": "Réessayer"
+  },
+  "terms": {
+    "title": "Conditions Générales pour Menio",
+    "lastUpdated": "Dernière mise à jour: 29 Mars 2024",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "content": "Ces Conditions Générales régissent votre utilisation du service de création de site web pour restaurant de Menio et constituent un accord juridiquement contraignant entre vous et Menio."
+      },
+      "serviceDescription": {
+        "title": "2. Description du Service",
+        "content": "Menio fournit une plateforme SAAS qui permet aux propriétaires de restaurants de créer et maintenir une présence en ligne grâce à un site web personnalisé pour leur restaurant."
+      },
+      "subscription": {
+        "title": "3. Abonnement",
+        "pricing": "3.1 Tarification: Le service est facturé 30 euros par mois après une période d'essai gratuite de 30 jours.",
+        "freeTrial": "3.2 Essai Gratuit: Lors de l'inscription, vous êtes éligible à une période d'essai gratuite de 30 jours. Une carte de crédit valide est requise pour commencer l'essai gratuit.",
+        "billing": "3.3 Facturation: Après la fin de la période d'essai gratuite, votre carte de crédit sera automatiquement débitée du montant mensuel de l'abonnement, sauf si vous annulez avant la fin de l'essai."
+      },
+      "userObligations": {
+        "title": "4. Obligations de l'Utilisateur",
+        "accurateInfo": "4.1 Informations Exactes: Vous acceptez de fournir des informations exactes, actuelles et complètes lors du processus d'inscription et de mettre à jour ces informations pour les maintenir exactes, actuelles et complètes.",
+        "contentResponsibility": "4.2 Responsabilité du Contenu: Vous êtes seul responsable du contenu que vous publiez via notre service. Cela inclut les informations de menu, les photographies, les descriptions de restaurant et tout autre contenu."
+      },
+      "termination": {
+        "title": "5. Résiliation",
+        "cancel": "5.1 Vous pouvez annuler votre abonnement à tout moment via les paramètres de votre compte ou en contactant le service client.",
+        "deactivation": "5.2 Après la résiliation, votre site web restera accessible jusqu'à la fin de votre période payée, après quoi il sera désactivé."
+      },
+      "privacy": {
+        "title": "6. Confidentialité",
+        "content": "Votre confidentialité est importante pour nous. Veuillez consulter notre Politique de Confidentialité pour comprendre comment nous collectons, utilisons et divulguons des informations vous concernant."
+      },
+      "changesTerms": {
+        "title": "7. Modifications des Conditions",
+        "content": "Nous nous réservons le droit de modifier ces Conditions à tout moment. Nous vous informerons des changements importants via notre site web ou en vous envoyant un email."
+      },
+      "contactInfo": {
+        "title": "8. Informations de Contact",
+        "content": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à thomas@menio.app."
+      }
+    }
+  }
+}
